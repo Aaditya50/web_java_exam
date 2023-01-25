@@ -1,0 +1,66 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+ pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<link rel="stylesheet"
+ href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+ crossorigin="anonymous">
+</head>
+
+</head>
+<body>
+ <div class="container">
+ 
+ <hr>
+  <div class="row col-md-10 col-md-offset-3"> 
+   
+   <div class="card card-body">
+   
+    <h2>User Register Form</h2>
+    <div class="col-md-8 col-md-offset-3">
+
+     <form action="<%=request.getContextPath()%>/register" method="post">
+
+      <div class="form-group">
+       <label for="rollno">Roll NO:</label> <input type="number"
+        class="form-control" id="rollno" placeholder="Roll No"
+        name="rollno" required>
+      </div>
+      <div class="form-group">
+       <label for="name">Name:</label> <input type="text"
+        class="form-control" id="name" placeholder="Name"
+        name="name" required>
+      </div>
+
+      <div class="form-group">
+       <label for="address">Address:</label> <input type="text"
+        class="form-control" id="address" placeholder="Address"
+        name="address" required>
+      </div>
+
+      <div class="form-group">
+       <label for="phoneno">Phone No:</label> <input type="text"
+        class="form-control" id="phoneno" placeholder="Phone No"
+        name="phoneno" required>
+      </div>
+
+      <div class="form-group">
+       <label for="degree">Degree:</label> <input type="text"
+        class="form-control" id="degree" placeholder="Degree"
+        name="degree" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Add</button>
+
+     </form>
+    </div>
+   </div>
+  </div>
+ </div>
+</body>
+</html>
